@@ -17,8 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/hello/{name}', static function (string $name) {
-    return "Hello, $name";
+Route::get('/main', function () {
+    return "Страница приветствия";
 });
 
 Route::get('/info', function () {
